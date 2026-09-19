@@ -1,0 +1,6 @@
+work/
+data/
+reference/
+*.bam
+*.vcf.gz
+.nextflow*
