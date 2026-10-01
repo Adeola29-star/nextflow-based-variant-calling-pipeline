@@ -38,6 +38,10 @@ The original paired FASTQ files were downloaded from the ENA and are excluded fr
 
 The pipeline completed successfully end-to-end with no manual intervention (`nextflow run main.nf`, 5 of 5 processes succeeded, fully containerised and confirmed via `docker images`). On chromosome 21, 7,209 variants were called from the subsampled NA12878 data, with realistic genotype, depth, and quality distributions. A consolidated MultiQC report was generated alongside the variant calls. FastQC showed no critical quality failures, with two WARNs (per-sequence GC content; per-tile quality on one read file) that did not indicate a major quality issue. MarkDuplicates reported a 0.07% duplication rate.
 
+- MultiQC report: https://adeola29-star.github.io/nextflow-based-variant-calling-pipeline/results/multiqc/multiqc_report.html
+- FastQC (R1): https://adeola29-star.github.io/nextflow-based-variant-calling-pipeline/results/fastqc/NA12878_sub_R1_fastqc.html
+- FastQC (R2): https://adeola29-star.github.io/nextflow-based-variant-calling-pipeline/results/fastqc/NA12878_sub_R2_fastqc.html
+
 ## Repository contents
 
 This repository contains only the pipeline code, Docker configuration, and QC reports (`results/fastqc/`, `results/multiqc/`). Raw sequencing data, the reference genome, Nextflow's working cache, and large intermediate outputs (BAM, VCF) are excluded. These remain in a separate local working directory and are excluded here via `.gitignore`, both because of GitHub's file size limits and because they are fully reproducible by re-running the pipeline rather than needing to be version-controlled.
