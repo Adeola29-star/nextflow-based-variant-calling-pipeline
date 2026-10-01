@@ -1,4 +1,3 @@
-cat > README.md << 'EOF'
 # Nextflow Variant-Calling Pipeline
 
 ## Problem
