@@ -1,0 +1,31 @@
+# Nextflow execution files
+work/
+.nextflow/
+.nextflow.log*
+.nextflow.*
+.cache/
+
+# Large sequencing and analysis files
+data/
+reference/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.vcf
+*.vcf.gz
+*.tbi
+
+# Local execution outputs
+results/aligned/
+results/dedup/
+results/variants/
+results/execution_report.html
+results/execution_timeline.html
+
+# Temporary files
+*.tmp
+*.log
